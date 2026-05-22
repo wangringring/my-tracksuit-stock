@@ -1,1 +1,1 @@
-st-theme-st-gsheets-connection
+st-gsheets-connection
