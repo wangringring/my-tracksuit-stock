@@ -9,7 +9,7 @@ st.title("👕 ระบบจัดการสต็อกเสื้อว�
 
 # 1. เชื่อมต่อกับ Google Sheets
 try:
-    conn = st.connection("gsheets", type=GSheetsConnection)
+    conn = st.connection("gsheets", type=GSheetsConnection, spreadsheet="https://docs.google.com/spreadsheets/d/1dmzmAN_HG5D38rtvmKDeW0bIqyQ7l6kkQ7woCN6UTBA/edit?usp=sharing")
     
     # ดึงข้อมูลจากแผ่นงานต่างๆ
     df_stock = conn.read(worksheet="Stock", ttl=0)
